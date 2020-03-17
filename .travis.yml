@@ -10,7 +10,6 @@ script:
   - npm install -g typescript
   - npm run publish-server
 before_deploy:
-  - cp package.json out/package.json
   - cd out/
 jobs:
   include:

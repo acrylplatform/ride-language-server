@@ -61,7 +61,7 @@ export class LspServer {
 
     private applyChanges(document: TextDocument, didChangeTextDocumentParams: DidChangeTextDocumentParams): TextDocument {
         let buffer = document.getText();
-        let changes = didChangeTextDocumentParams.contentChanges;
+        let changes: any = didChangeTextDocumentParams.contentChanges;
 
         for (let i = 0; i < changes.length; i++) {
             if (!changes[i].range && !changes[i].rangeLength) {
