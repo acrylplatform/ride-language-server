@@ -9,3 +9,4 @@ const updatedPackageObj = {
     private: undefined
 }
 fs.writeFileSync(path.join(__dirname, '..', 'out', 'package.json'), JSON.stringify(updatedPackageObj, null, 4))
+
